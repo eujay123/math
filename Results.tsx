@@ -1,7 +1,7 @@
 import React from 'react';
-import { Result } from '../types';
-import { CheckIcon } from './icons/CheckIcon';
-import { XIcon } from './icons/XIcon';
+import { Result } from '../types.ts';
+import { CheckIcon } from './icons/CheckIcon.tsx';
+import { XIcon } from './icons/XIcon.tsx';
 
 interface ResultsProps {
   results: Result[];

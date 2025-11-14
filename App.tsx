@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Question, UserAnswer, Result } from './types';
-import { fetchQuestions } from './services/supabaseService';
-import { getExplanation } from './services/geminiService';
-import QuestionCard from './components/QuestionCard';
-import Results from './components/Results';
+import { Question, UserAnswer, Result } from './types.ts';
+import { fetchQuestions } from './services/supabaseService.ts';
+import { getExplanation } from './services/geminiService.ts';
+import QuestionCard from './components/QuestionCard.tsx';
+import Results from './components/Results.tsx';
 
 const Loader: React.FC<{ message: string; subMessage?: string }> = ({ message, subMessage }) => (
     <div className="flex items-center justify-center min-h-screen">

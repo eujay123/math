@@ -1,4 +1,4 @@
-import { Question } from '../types';
+import { Question } from '../types.ts';
 
 const questions: Question[] = [
   // Teoria de Conjuntos

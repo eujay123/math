@@ -1,6 +1,6 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { Question } from '../types';
+import { Question } from '../types.ts';
 
 // Fix: Use process.env.API_KEY to access the environment variable as per the guidelines.
 const apiKey = process.env.API_KEY;
