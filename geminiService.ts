@@ -2,8 +2,15 @@
 import { GoogleGenAI } from "@google/genai";
 import { Question } from '../types';
 
-// Assume process.env.API_KEY is configured in the environment
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+// Fix: Use process.env.API_KEY to access the environment variable as per the guidelines.
+const apiKey = process.env.API_KEY;
+
+if (!apiKey) {
+  // Fix: Updated error message to reflect the correct environment variable name.
+  throw new Error("API_KEY não foi definida. Por favor, configure-a nas variáveis de ambiente.");
+}
+
+const ai = new GoogleGenAI({ apiKey });
 
 export const getExplanation = async (question: Question, userAnswer: string, correctAnswer: string): Promise<string> => {
   const prompt = `
