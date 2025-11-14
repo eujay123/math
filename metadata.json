@@ -1,0 +1,5 @@
+{
+  "name": "Plataforma de Avaliação de Matemática",
+  "description": "Uma plataforma interativa para realizar avaliações de matemática de múltipla escolha. Após a submissão, a plataforma fornece a nota, destaca os erros e usa a API Gemini para gerar explicações detalhadas para cada resposta incorreta.",
+  "requestFramePermissions": []
+}
